@@ -11,9 +11,7 @@ class Review extends Component {
 
     return (
       <div>
-        <li>
-          {review.text}
-        </li>
+        <li>{review.text}</li>
         <button onClick={this.handleOnClick}> X </button>
       </div>
     );
