@@ -16,7 +16,10 @@ class ReviewInput extends Component {
   handleOnSubmit = event => {
     event.preventDefault();
     this.props.addReview(this.state.text);
-    
+    const review = {
+      text: this.state.text,
+      restaurantId: this.props.restaurantId,
+    };
     this.setState({
       text: '',
     })
@@ -37,13 +40,6 @@ class ReviewInput extends Component {
 
 export default ReviewInput;
 
-
-
-//   handleOnChange = event => {
-//     this.setState({
-//       text: event.target.value,
-//     });
-//   };
 
 //   handleOnSubmit = event => {
 //     event.preventDefault();
