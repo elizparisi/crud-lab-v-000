@@ -5,7 +5,7 @@ class ReviewInput extends Component {
   
   state = {
     text: ''
-  }
+  };
   
   handleOnChange = event => {
     this.setState({
